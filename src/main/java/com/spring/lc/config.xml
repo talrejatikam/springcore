@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">    
+    
+ <context:annotation-config />
+ <bean class = "com.spring.lc.UsingXml" name="usingXml" init-method="init" destroy-method="destory">
+   <property name="value" value="12"/>
+   <property name="name" value="sonu Talreja"/>  
+ </bean>
+ 
+ <bean class="com.spring.lc.UsingInterface" name="usingInterface" >
+  <property name="value" value="14"/>
+   <property name="name" value="Tikam Talreja"/>  
+ </bean>
+ 
+ <bean class="com.spring.lc.UsingAnnotation" name="usingAnnotation">
+ <property name="phone" value="9787239"></property>
+ <property name="name" value="Talreja"></property>
+ </bean>
+ 
+ </beans>
